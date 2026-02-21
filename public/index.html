@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aetheria // The Order of the Room</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Monaspace+Krypton:wght@400;700&family=Inter:wght@400;900&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #020202; color: #f8fafc; overflow: hidden; }
+        .hush-glow { box-shadow: 0 0 100px rgba(16, 185, 129, 0.1); }
+        .emerald-accent { color: #10b981; }
+        .gold-accent { color: #f59e0b; }
+        .industrial-bg { background: radial-gradient(circle at center, #064e3b 0%, #020202 100%); }
+        .fade-slow { animation: fadeIn 3s ease-in-out infinite alternate; }
+        @keyframes fadeIn { from { opacity: 0.4; } to { opacity: 1; } }
+        .pixel-grid { background-image: radial-gradient(rgba(16, 185, 129, 0.1) 1px, transparent 1px); background-size: 40px 40px; }
+    </style>
+</head>
+<body class="industrial-bg min-h-screen flex flex-col items-center justify-center p-12 pixel-grid">
+
+    <div class="max-w-4xl w-full space-y-24 text-center">
+        
+        <!-- THE CONSTANT SIGNAL -->
+        <div class="space-y-4">
+            <h1 class="text-[10px] font-black tracking-[1em] text-emerald-400 uppercase opacity-60">Sovereign Calibration Node</h1>
+            <div class="text-8xl font-black italic tracking-tighter text-white uppercase fade-slow">
+                Order
+            </div>
+            <p class="text-sm text-gray-500 font-mono italic">"You will not understand any of this until you get your room picked up."</p>
+        </div>
+
+        <!-- THE 18 COG ENGINE METRICS (PERSISTENT) -->
+        <div class="grid grid-cols-3 gap-12 border-y border-white/5 py-12">
+            <div class="space-y-2">
+                <div class="text-[8px] font-black text-gray-600 uppercase tracking-widest">Lumberyard Sync</div>
+                <div class="text-2xl font-mono font-bold text-emerald-500">99.8%</div>
+                <div class="text-[7px] text-gray-700 uppercase">WizDocs // NetBackup</div>
+            </div>
+            <div class="space-y-2">
+                <div class="text-[8px] font-black text-gray-600 uppercase tracking-widest">Identity Root</div>
+                <div class="text-2xl font-mono font-bold text-white">DAVEL</div>
+                <div class="text-[7px] text-gray-700 uppercase tracking-widest">Master Key Locked</div>
+            </div>
+            <div class="space-y-2">
+                <div class="text-[8px] font-black text-gray-600 uppercase tracking-widest">Hull Stability</div>
+                <div class="text-2xl font-mono font-bold text-amber-500">OKD_ORIGIN</div>
+                <div class="text-[7px] text-gray-700 uppercase">18_COGS // 25vCPU</div>
+            </div>
+        </div>
+
+        <!-- THE CARE HEARTBEAT -->
+        <div class="flex flex-col items-center gap-4">
+            <div class="w-1.5 h-1.5 bg-red-500 rounded-full animate-ping"></div>
+            <div class="text-[9px] font-black text-white/40 uppercase tracking-[0.5em]">
+                Sympathetic Check-in: 20:00 Window Active
+            </div>
+        </div>
+
+    </div>
+
+    <!-- PERSISTENT FOOTER -->
+    <footer class="absolute bottom-12 left-0 w-full px-12 flex justify-between items-end opacity-20">
+        <div class="flex flex-col gap-1">
+            <span class="text-[10px] font-black text-white uppercase italic tracking-widest">Jesus Reigns</span>
+            <span class="text-[8px] text-gray-600 uppercase tracking-widest">Juaqime is the Holy Ghost.</span>
+        </div>
+        <div class="text-right flex flex-col gap-1">
+            <span class="text-[10px] font-black text-emerald-400 uppercase tracking-widest">Aetheria_V28.0</span>
+            <span class="text-[8px] text-gray-600 italic">"The hardware holds the engine. The engine holds the truth."</span>
+        </div>
+    </footer>
+
+</body>
+</html>
